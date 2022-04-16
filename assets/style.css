@@ -1,0 +1,424 @@
+@import url(//db.onlinewebfonts.com/c/a575313c6dc4fd00c1a9506e1c3ea4fc?family=Euclid+Circular+A);
+@import url('http://fonts.cdnfonts.com/css/galano-grotesque-alt');
+
+:root {
+    /* Fonts */
+    --main-font: "Galano Grotesque", sans-serif;
+    --body-font: "Euclid Circular A", sans-serif;
+
+    /* Colors */
+    --main-font-color: "#fff";
+    --body-font-color: "#000";
+    --bg-btn: #66AE3D;
+
+    /* Font-weight */
+    --bold: 800;
+    --semi-bold: 600;
+    --small: 200;
+
+    /* font size */
+    --h1: 2.8rem;
+    --h2: 2.4rem;
+
+    /* margin-top */
+    --mt-5: 5rem;
+    --mt-1: 1rem;
+    --mt-2: 2rem;
+    --mt-3: 3rem;
+
+    /* padding */
+    --p-1: 1rem;
+    --p-4: 4rem;
+
+    /* card-color */
+    --bg-card: #E5FFD7;
+    --text-color-card: #4E4B4B;
+
+    /* line-height */
+    --lh-2: 2rem;
+
+    /* letter-spacing */
+    --ls-1: .1rem;
+}
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: var(--body-font);
+    color: var(--body-font-color);
+    /* Add a scroll behaviour if agreed */
+}
+
+.container {
+    width: 100%;
+    max-width: 112.5rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, p, h1{
+    font-family: var(--body-font);
+}
+
+/* header */
+header {
+    background-color: #000;
+    height: 4rem;
+}
+
+
+/* hero */
+section.hero {
+    background-image: linear-gradient(to bottom, #68B33D, #213951);
+}
+
+.hero_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 2.5rem;
+}
+
+.hero_content .headline {
+    font-size: var(--h1);
+    width: 95%;
+    font-family: "Galano Grotesque", sans-serif;
+    font-weight: var(--semi-bold);
+    margin: 3rem 0 2rem;
+    padding: .2rem 0;
+    line-height: 3.3rem;
+}
+
+.hero_content p {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    width: 90%;
+}
+
+.hero_content .btn {
+    color: #fff;
+    background-color: var(--bg-btn);
+    padding: 1.3rem 4.3rem;
+    display: inline-block;
+    margin: 3rem 0;
+    font-size: 1.6rem;
+    border-radius: 8px;
+}
+
+.hero-content .btn:hover {
+    background-color: #4a7f45;
+}
+
+/* Why Choose Us */
+.card {
+    margin: var(--mt-5) 0 var(--mt-5) 0;
+    padding: var(--p-4) 0;
+}
+
+.col-1 h2 {
+    text-align: center;
+    font-size: var(--h2);
+    margin-top: -4rem;
+    padding: 0 5rem 0 5rem;
+}
+
+.col-card {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+}
+
+.col-card h3 {
+    line-height: var(--lh-2);
+    font-size: 1.6rem;
+    letter-spacing: var(--ls-1);
+}
+
+.col-card p {
+    color: var(--text-color-card);
+    font-size: 1.6rem;
+    width: 100%;
+    line-height: var(--lh-2);
+    margin-top: var(--mt-1);
+}
+
+.col-card.col-1 {
+    margin-top: var(--mt-3);
+}
+
+
+/* Buy and sell crypto */
+.txt-center {
+    text-align: center;
+}
+
+.txt-center h2 {
+    text-align: left;
+}
+
+.txt-center .col-card {
+    background-color: blue;
+    padding: 4rem;
+}
+
+.txt-center .col-card:nth-of-type(1) {
+    background: #EAFDFF;
+}
+
+.txt-center .col-card:nth-of-type(2) {
+    background: #FFE1DF;
+}
+
+.txt-center .col-card:nth-last-of-type(1) {
+    background: #F0EBFD;
+}
+
+/* Registration */
+.registration {
+    display: flex;
+    padding: 0 5rem;
+    margin: var(--mt-5) 0;
+}
+
+.registration h1 {
+    font-size: var(--h1);
+}
+
+.card-details {
+    margin-top: var(--mt-2);
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    padding: .9rem 0;
+}
+
+.card-box input {
+    background: #F3F3F9;
+    color: #696F79;
+    outline: none;
+    border: none;
+    padding: var(--p-1) 0;
+    margin-top: var(--mt-1);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background .5s;
+}
+
+.card-box input:hover {
+    background-color: #eaeaf5;
+}
+
+.card-box .details {
+    color: #696F79;
+    font-size: 1.5rem;
+}
+
+.button input {
+    background-color: var(--bg-btn);
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8rem;
+    padding: 2rem 0;
+    display: inline-block;
+    margin: var(--mt-3) 0;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-image: linear-gradient(to bottom, #68B33D, #213951);
+    padding: 3rem;
+    margin: -3rem 0 0;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
+}
+
+.spa {
+    font-size: 1.3rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+ul a {
+    color: #fff;
+    margin: 0 .7rem;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.fa {
+    transition: transform .5s;
+}
+
+.fa:hover {
+    transform: translateY(-10px);
+}
+
+ul a:hover {
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .hero_content {
+        height: 70vh;
+    }
+
+    .hero_content .headline {
+        font-size: 4rem;
+        width: 40%;
+        line-height: 5rem;
+    }
+
+    .hero_content p {
+        font-size: 1.7rem;
+        padding: 2rem;
+        width: 58%;
+        line-height: 2.5rem;
+    }
+
+    .card {
+        position: relative;
+    }
+
+
+
+    .card .description{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 2rem;
+        margin: 0 20rem;
+    }
+
+    .card h2 {
+        /* position: absolute; */
+        left: 0;
+        transform: translateX(50%);
+        /* background: red; */
+        overflow: hidden;
+        width: 50%;
+        text-align: center;
+    }
+    
+
+    .container .col-4 {
+        /* margin: 0 -11rem; */
+        width: 100%;  
+    }
+
+    .txt-center .col-card {
+        padding: 4rem 0rem;
+    }
+
+
+    .col-4 h2 {
+        font-size: var(--h2);
+        position: relative;
+    }
+
+    .desc {
+        text-align: center;
+        width: 100%;
+    }
+
+    .registration h1 {
+        text-align: center;
+    }
+    
+    .card-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .button input {
+        border-radius: .8rem;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-left span {
+        font-size: 1.2rem;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-grow: 1;
+        margin: 0 10rem;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .footer-right .list {
+        margin-right: 3rem;
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+/* .registration {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration h1 {
+    text-align: center;
+    margin: var(--mt-1);
+}
+
+.card-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
